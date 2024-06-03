@@ -2,6 +2,8 @@
 
 [Текст задания](https://clck.ru/3Acaxf)
 
+[Рабочая версия приложеная на gh-pages](https://evgenytomson.github.io/prianiki/)
+
 ## Ипользованные инструменты:
 
 - React
@@ -38,3 +40,5 @@ npm install
 ```bash
 npm run build
 ```
+
+Вероятно, потребуется убрать строку base: '/prianiki/' в файле vite.config.ts, поскольку она добавлена для корректного деплоя на gh-pages.
