@@ -30,10 +30,9 @@ const DataForm = ({ onSubmit, isLoading }: Props) => {
   };
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const key = e.currentTarget.name;
-    const value = e.currentTarget.value;
+    const { name, value } = e.currentTarget;
 
-    setNewData((prev) => ({ ...prev, [key]: value }));
+    setNewData((prev) => ({ ...prev, [name]: value }));
   };
 
   return (

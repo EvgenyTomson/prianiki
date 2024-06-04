@@ -14,9 +14,9 @@ const DataRow = ({ data, onUpdate, onDelete }: Props) => {
   const [currentData, setCurrentData] = useState<DataRecord>(data);
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const key = e.currentTarget.name;
-    const value = e.currentTarget.value;
-    setCurrentData((prev) => ({ ...prev, [key]: value }));
+    const { name, value } = e.currentTarget;
+
+    setCurrentData((prev) => ({ ...prev, [name]: value }));
   };
 
   return (
